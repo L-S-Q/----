@@ -21,6 +21,8 @@ public class AdministratorController {
         String username = administrator.getUsername();
         String password = administrator.getPassword();
         if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
+
+            
             return false;
         }
         return administratorServiceImpl.login(administrator);
